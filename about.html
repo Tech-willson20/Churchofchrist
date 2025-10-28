@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Us - Church of Christ</title>
+  <meta name="description" content="Learn about Church Of Christ – our history, mission, and vision as a pillar and foundation of truth." />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="icon" type="image/png" href="img/churchofchirstlogo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="ryt.html"><img src="img/churchofchirstlogo.png" alt="Church Of Christ Logo" />Church Of Christ<span class="accent">.</span></a>
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="ryt.html#home">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="ryt.html#services">Services</a></li>
+          <li><a href="ryt.html#ministries">Ministries</a></li>
+          <li><a href="ryt.html#beliefs">Beliefs</a></li>
+          <li><a href="ryt.html#events">Events</a></li>
+          <li><a href="ryt.html#team">Team</a></li>
+          <li><a href="ryt.html#resources">Resources</a></li>
+          <li><a href="ryt.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="main-nav">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero about-hero">
+      <div class="hero-inner container">
+        <h1>About Our Church</h1>
+        <p class="lead">Walking in Faith, Growing in Grace</p>
+      </div>
+    </section>
+
+    <section class="container section reveal">
+      <div class="grid about-grid">
+        <div class="about-content">
+          <h2>Our Story</h2>
+          <p>The Church of Christ has been serving our community with unwavering dedication to spreading God's Word since its establishment. Our congregation began with a small group of devoted believers committed to restoring New Testament Christianity, and has grown into a vibrant community of faith.</p>
+          
+          <h3>Our Mission</h3>
+          <p>To glorify God by making disciples who love God, love people, and serve both with the message and love of Jesus Christ.</p>
+          
+          <h3>Our Vision</h3>
+          <p>To be a Christ-centered church that impacts our community and beyond with the gospel, while nurturing spiritual growth and fostering authentic relationships.</p>
+        </div>
+        
+        <div class="about-features">
+          <h3>What Sets Us Apart</h3>
+          <ul class="bullets">
+            <li>Biblical, Christ-centered teaching</li>
+            <li>Warm, welcoming community</li>
+            <li>Multi-generational ministry</li>
+            <li>Strong emphasis on discipleship</li>
+            <li>Active community engagement</li>
+            <li>Focus on family values</li>
+            <li>Contemporary & traditional worship</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band reveal">
+      <div class="container">
+        <h2>Our Core Values</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Biblical Authority</h3>
+            <p>We believe the Bible is God's inspired Word and our ultimate authority for faith and practice. All our teachings and decisions are grounded in Scripture.</p>
+          </article>
+          <article class="card">
+            <h3>Authentic Community</h3>
+            <p>We foster genuine relationships where people can find acceptance, support, and accountability as they grow in their faith journey.</p>
+          </article>
+          <article class="card">
+            <h3>Intentional Discipleship</h3>
+            <p>We are committed to helping each person grow in their relationship with Christ through teaching, mentoring, and practical application of God's Word.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section reveal">
+      <h2>Join Us in Worship</h2>
+      <div class="grid service-times">
+        <div>
+          <h3>Service Times</h3>
+          <ul class="schedule">
+            <li>
+              <strong>Sunday Morning Worship</strong>
+              <span>9:00 AM & 11:00 AM</span>
+            </li>
+            <li>
+              <strong>Wednesday Bible Study</strong>
+              <span>7:00 PM</span>
+            </li>
+            <li>
+              <strong>Thursday Worship</strong>
+              <span>6:00 PM</span>
+            </li>
+            <li>
+              <strong>Friday Prayer Night</strong>
+              <span>6:30 PM</span>
+            </li>
+          </ul>
+        </div>
+        <div class="cta-block">
+          <h3>Ready to Visit?</h3>
+          <p>We'd love to welcome you to our church family. Join us this Sunday and experience the warmth of our community.</p>
+          <a href="ryt.html#contact" class="btn primary">Plan Your Visit</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="logo" href="ryt.html">Church Of Christ<span class="accent">.</span></a>
+        <p class="muted">Pillar and Foundation of Truth.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="ryt.html#services">Services</a></li>
+          <li><a href="ryt.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Twitter">t</a>
+        <a href="#" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <small>&copy; <span id="year"></span> Church Of Christ. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    // Populate copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Menu toggle for small screens
+    const menuBtn = document.getElementById('menu-btn');
+    const mainNav = document.getElementById('main-nav');
+    menuBtn && menuBtn.addEventListener('click', () => {
+      const open = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', String(!open));
+      mainNav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
